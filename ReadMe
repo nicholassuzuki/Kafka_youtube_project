@@ -1,0 +1,18 @@
+Things that needed to be installed
+Docker
+Docker-Compose (I believe to package all the different components i.e kafka, zookeeper, RDkafka)
+kafka 
+zookeeper -- needed to run cluseter even though we dont really use it
+
+RDkafka (Node_module) -- The node-rdkafka library is a high-performance NodeJS client for Apache Kafka that wraps the native librdkafka library. 
+All the complexity of balancing writes across partitions and managing (possibly ever-changing) brokers should be encapsulated in the library.
+
+AVSC - Serialized and deserializes data (objects) that we put into the stream
+
+
+In order to run the command "npm run start:producer" to view the produce, in the package.json file,
+i had to add *"type": "module",* on line 11.  (not there before.)  This was the error...
+SyntaxError: Cannot use import statement outside a module
+
+
+
